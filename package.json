@@ -7,7 +7,7 @@
     "build"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "rimraf ./build && tsc",
     "test": "jest"
   },
   "homepage": "https://github.com/dvlden/aspecter#readme",
