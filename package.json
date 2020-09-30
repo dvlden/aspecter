@@ -1,14 +1,17 @@
 {
   "name": "aspecter",
   "version": "1.0.0",
-  "description": "Utility function to retrieve aspect ratio information from given resolution.",
+  "description": "A utility module for Node & Browser that calculates aspect ratio and decimal fraction based on width and height and alongside provides normalized aspect.",
   "main": "build/index.js",
+  "types": "build/index.d.ts",
   "files": [
     "build"
   ],
   "scripts": {
     "build": "rimraf ./build && tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test"
   },
   "homepage": "https://github.com/dvlden/aspecter#readme",
   "bugs": "https://github.com/dvlden/aspecter/issues",
