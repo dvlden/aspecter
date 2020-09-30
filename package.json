@@ -1,0 +1,40 @@
+{
+  "name": "aspecter",
+  "version": "1.0.0",
+  "description": "Utility function to retrieve aspect ratio information from given resolution.",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "homepage": "https://github.com/dvlden/aspecter#readme",
+  "bugs": "https://github.com/dvlden/aspecter/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvlden/aspecter.git"
+  },
+  "keywords": [
+    "aspect",
+    "ratio",
+    "decimal",
+    "original",
+    "normalized"
+  ],
+  "author": {
+    "name": "Nenad Novaković",
+    "email": "n.dvlden@gmail.com",
+    "url": "https://github.com/dvlden"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.14",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2",
+    "typescript": "^4.0.3"
+  }
+}
