@@ -15,34 +15,47 @@ Many film/video creators do rendering at some weird resolutions, so normalized a
 ### Usage
 
 You may hard-code width/height or grab it from some source. _(e.g. video, image)_
-
-```ts
-import { aspecter } from 'aspecter'
-
-const aspecterResult = aspecter(1920, 1080)
-
-console.log(aspecterResult)
-
-// -- console.log output --
-{
-  resolution: [1920, 1080],
-  originalAspect: {
-    ratio: [16, 9],
-    decimal: 1.77
-  },
-  normalizedAspect: undefined
-}
-```
-
 If you have some weird resolution, `normalizedAspect` should be what you're actually looking for.
+
+<br>
+
+> TypeScript
 
 ```ts
 import { aspecter } from 'aspecter'
 
 const aspecterResult = aspecter(1280, 536)
+```
 
-console.log(aspecterResult)
+<br>
 
+> Node
+
+```js
+const { aspecter } = require('aspecter')
+
+const aspecterResult = aspecter(1280, 536)
+```
+
+<br>
+
+> Browser
+
+```html
+<!-- PENDING CDN SUBMISSIONS -->
+<script src="path/to/aspecter.js"></script>
+<script>
+  const aspecterResult = aspecter(1280, 536)
+</script>
+```
+
+<br>
+
+### Output
+
+Same resolution was used in all examples above, so the result will be the same.
+
+```js
 // -- console.log output --
 {
   resolution: [1280, 536],
@@ -56,4 +69,3 @@ console.log(aspecterResult)
   }
 }
 ```
-

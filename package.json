@@ -1,14 +1,14 @@
 {
   "name": "aspecter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility module for Node & Browser that calculates aspect ratio and decimal fraction based on width and height and alongside provides normalized aspect.",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "types": "build/index.d.ts",
   "files": [
     "build"
   ],
   "scripts": {
-    "build": "rimraf ./build && tsc",
+    "build": "webpack --progress --hide-modules --mode production",
     "test": "jest",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test"
@@ -37,7 +37,11 @@
     "@babel/preset-typescript": "^7.10.4",
     "@types/jest": "^26.0.14",
     "babel-jest": "^26.3.0",
+    "clean-webpack-plugin": "^3.0.0",
     "jest": "^26.4.2",
-    "typescript": "^4.0.3"
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
