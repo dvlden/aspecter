@@ -3,7 +3,6 @@
   "version": "1.0.3",
   "license": "MIT",
   "description": "A utility module for Node & Browser that calculates aspect ratio and decimal fraction based on width and height and alongside provides normalized aspect.",
-
   "main": "dist/main.js",
   "module": "dist/esm.js",
   "browser": "dist/iife.js",
@@ -11,12 +10,10 @@
   "files": [
     "dist"
   ],
-
   "scripts": {
     "build": "rimraf ./dist && rollup -c",
     "test": "jest"
   },
-
   "homepage": "https://github.com/dvlden/aspecter#readme",
   "bugs": "https://github.com/dvlden/aspecter/issues",
   "repository": {
@@ -28,7 +25,6 @@
     "email": "n.dvlden@gmail.com",
     "url": "https://github.com/dvlden"
   },
-
   "keywords": [
     "aspect",
     "ratio",
@@ -36,11 +32,9 @@
     "original",
     "normalized"
   ],
-
   "devDependencies": {
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-typescript": "^7.10.4",
-    "@rollup/plugin-commonjs": "^15.1.0",
     "@types/jest": "^26.0.14",
     "babel-jest": "^26.3.0",
     "jest": "^26.4.2",
