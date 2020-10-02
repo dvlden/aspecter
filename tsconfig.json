@@ -2,7 +2,6 @@
   "compilerOptions": {
     /* Basic Options */
     "target": "es6",
-    "module": "es6",
     "lib": ["es6"],
     "declaration": true,
     "sourceMap": true,
