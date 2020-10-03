@@ -1,6 +1,6 @@
 {
   "name": "aspecter",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A utility module for Node & Browser that calculates aspect ratio and decimal fraction based on width and height and alongside provides normalized aspect.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
