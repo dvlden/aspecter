@@ -10,7 +10,7 @@ export const aspecter = (w: number, h: number): Result => {
     resolution: [w, h],
     originalAspect: {
       ratio: [(w / divisor), (h / divisor)],
-      decimal: decimal
+      decimal
     },
     normalizedAspect: getNormalizedAspect(decimal, commonAspects)
   }
