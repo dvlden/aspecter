@@ -1,8 +1,5 @@
 const path = require('path')
-
-const plugins = {
-  clean: require('clean-webpack-plugin').CleanWebpackPlugin
-}
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -38,7 +35,7 @@ module.exports = {
   },
 
   plugins: [
-    new plugins.clean()
+    new CleanWebpackPlugin
   ],
 
   devtool: 'source-map'
