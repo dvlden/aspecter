@@ -9,7 +9,9 @@
   ],
   "scripts": {
     "build": "webpack --progress --mode production",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test"
   },
   "homepage": "https://github.com/dvlden/aspecter#readme",
   "bugs": "https://github.com/dvlden/aspecter/issues",
