@@ -1,5 +1,5 @@
 {
-  "name": "aspecter",
+  "name": "@dvlden/aspecter",
   "version": "1.0.6",
   "description": "A utility module for Node & Browser that calculates aspect ratio and decimal fraction based on width and height and alongside provides normalized aspect.",
   "main": "dist/index.js",
@@ -10,9 +10,10 @@
   "scripts": {
     "build": "webpack --progress --mode production",
     "test": "jest",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run test"
+    "prepare": "pnpm run build",
+    "prepublishOnly": "pnpm run test"
   },
+  "packageManager": "pnpm@7.11.0",
   "homepage": "https://github.com/dvlden/aspecter#readme",
   "bugs": "https://github.com/dvlden/aspecter/issues",
   "repository": {

@@ -8,6 +8,7 @@ Many film/video creators do rendering at some weird resolutions, so normalized a
 
 ### Installation _(pick one)_
 - `npm i aspecter`
+- `pnpm i aspecter`
 - `yarn add aspecter`
 
 <br>
