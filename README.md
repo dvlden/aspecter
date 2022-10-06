@@ -7,9 +7,9 @@ Many film/video creators do rendering at some weird resolutions, so normalized a
 <br>
 
 ### Installation _(pick one)_
-- `npm i aspecter`
-- `pnpm i aspecter`
-- `yarn add aspecter`
+- `npm i @dvlden/aspecter`
+- `pnpm i @dvlden/aspecter`
+- `yarn add @dvlden/aspecter`
 
 <br>
 
@@ -23,7 +23,7 @@ If you have some weird resolution, `normalizedAspect` should be what you're actu
 > TypeScript
 
 ```ts
-import { aspecter } from 'aspecter'
+import { aspecter } from '@dvlden/aspecter'
 
 const aspecterResult = aspecter(1280, 536)
 ```
@@ -33,7 +33,7 @@ const aspecterResult = aspecter(1280, 536)
 > Node
 
 ```js
-const { aspecter } = require('aspecter')
+const { aspecter } = require('@dvlden/aspecter')
 
 const aspecterResult = aspecter(1280, 536)
 ```
