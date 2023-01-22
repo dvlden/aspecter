@@ -4,14 +4,23 @@ import { commonAspects } from './static'
 
 export const aspecter = (w: number, h: number): Result => {
   const divisor = gcd(w, h)
-  const decimal = getDecimalFractions((w / h), 2)
+  const decimal = getDecimalFractions(w / h, 2)
+  const normalizedAspect = getNormalizedAspect(decimal, commonAspects)
 
-  return {
+  const result: Result = {
     resolution: [w, h],
     originalAspect: {
-      ratio: [(w / divisor), (h / divisor)],
-      decimal
+      ratio: [w / divisor, h / divisor],
+      decimal,
     },
-    normalizedAspect: getNormalizedAspect(decimal, commonAspects)
   }
+
+  if (normalizedAspect) {
+    return {
+      ...result,
+      normalizedAspect,
+    }
+  }
+
+  return result
 }
